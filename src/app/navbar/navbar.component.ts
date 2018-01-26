@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RecipeService } from "./../recipe.service";
 
 const url = "http://food2fork.com/api/search?key=10cd6ff6c277cdd56b04ff13df62a2cb&q=";
+const rUrl = "http://food2fork.com/api/get?key=10cd6ff6c277cdd56b04ff13df62a2cb&rId=";  //+rId
 
 @Component({
   selector: 'app-navbar',

@@ -16,9 +16,4 @@ export class SearchResultComponent implements OnInit {
 
   }
 
-  info(): void{
-    // console.log(this.results);
-    console.log(this.recipeService.result);
-  }
-
 }

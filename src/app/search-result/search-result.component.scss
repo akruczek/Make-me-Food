@@ -1,4 +1,61 @@
 .search-result {
-  height: 100vh;
   width: 100vw;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    li {
+      list-style-type: none;
+      align-self: center;
+      margin: 10px 0;
+      .result-item {
+        padding: 10px;
+        border-radius: 10px;
+        width: 70vw;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        section {
+          margin: 0 10px;
+          // border: 1px solid black;
+          display: flex;
+          justify-content: center;
+        }
+        img { align-self: center; }
+        .image-section {
+          align-self: center;
+          text-align: center;
+          width: 50%;
+          height: 90%;
+          overflow: hidden;
+        }
+        .description-section {
+          width: 50%;
+          font-size: 36px;
+          font-weight: 700;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          h1 {
+            margin: 0;
+            padding-top: 0;
+          }
+          button {
+            width: 80%;
+            margin: 5px 10%;
+            cursor: pointer;
+            h2 { text-decoration: underline; }
+          }
+          h2 { font-size: 24px; }
+          h6 {
+            line-height: 0;
+            font-size: 16px;
+            margin: 8px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
 }
