@@ -5,6 +5,7 @@ nav {
   margin-left: -8px;
   margin-top: -8px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   .input-container {
     align-self: center;
@@ -23,5 +24,12 @@ nav {
       box-shadow: 1px 1px 1px 1px black;
       cursor: pointer;
     }
+  }
+  h6 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 32px;
   }
 }

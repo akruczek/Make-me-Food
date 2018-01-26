@@ -1,23 +1,22 @@
 import { Injectable } from '@angular/core';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Http } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
-
-const url = "http://food2fork.com/api/search?key=10cd6ff6c277cdd56b04ff13df62a2cb&q=";
-const ingredients = "chicken,apple";
+// import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class RecipeService {
-  key: "10cd6ff6c277cdd56b04ff13df62a2cb";
-  url: "";
+
+  result = [];
+
   constructor(
     private http: Http
   ) { }
 
-  getRecipe(): void {
-    console.log("getRecipe");
-    this.http.get(`http://food2fork.com/api/search?key=10cd6ff6c277cdd56b04ff13df62a2cb&q=${ingredients}`).subscribe(response => {
+  getRecipe(url: string): void {
+    this.http.get(url).subscribe(response => {
+      this.result = response.json();
       console.log(response.json());
+      // return response.json();
     });
   }
 
