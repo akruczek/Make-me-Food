@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipeService } from "./../recipe.service";
 
-const url = "http://food2fork.com/api/search?key=10cd6ff6c277cdd56b04ff13df62a2cb&q=";
-const rUrl = "http://food2fork.com/api/get?key=10cd6ff6c277cdd56b04ff13df62a2cb&rId=";  //+rId
-
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -23,7 +20,7 @@ export class NavbarComponent implements OnInit {
 
   search(): void {
     console.log(this.inputValue);
-    let searchUrl = url;
+    let searchUrl = "";
     if (this.inputValue !== undefined) {
       this.inputValue.split(" ").map((item, index) => {
         index===0 ? searchUrl += `${item}` : searchUrl += `,${item}`;

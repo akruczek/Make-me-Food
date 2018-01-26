@@ -16,4 +16,8 @@ export class SearchResultComponent implements OnInit {
 
   }
 
+  getRecipeDetails(id: string): void {
+    this.recipeService.getRecipeDescriptions(id);
+  }
+
 }

@@ -2,7 +2,7 @@
   <div class="input-container">
     Type some ingredients of your meal:
     <input class="ingredients-input" [(ngModel)]="inputValue" placeholder="ingredients..." />
-    <button class="search-button" (click)="search()">SEARCH</button>
+    <button class="search-button" (click)="search()" routerLink="/search">SEARCH</button>
   </div>
   <h6>Example: chicken onion apple</h6>
 </nav>

@@ -8,7 +8,7 @@
 
         <section class="description-section">
           <h1>{{result.title}}</h1>
-          <button><h2>Check Recipe! &#10555;</h2></button>
+          <button routerLink="/recipe" (click)="getRecipeDetails(result.recipe_id)"><h2>Check Recipe! &#10555;</h2></button>
           <h2>Social rank: {{+result.social_rank.toFixed(2)}}</h2>
           <h2>Publisher: {{result.publisher}}</h2>
           <h6><a href={{result.f2f_url}}>food2fork link</a></h6>

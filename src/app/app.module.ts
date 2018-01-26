@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RecipeService } from './recipe.service';
 import { SearchResultComponent } from './search-result/search-result.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { RecipeComponent } from './recipe/recipe.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [RecipeService],
   bootstrap: [AppComponent]

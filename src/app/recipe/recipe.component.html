@@ -1,0 +1,16 @@
+<!-- this.recipeService.recipeDetails -->
+<div class="details-container">
+  <section class="image-section">
+    <img src={{this.recipeService.recipeDetails.image_url}} />
+  </section>
+
+  <section class="description-section">
+    <h1>{{this.recipeService.recipeDetails.title}}</h1>
+    <h2>Ingredients:</h2>
+    <ul>
+      <li *ngFor="let ingredient of this.recipeService.recipeDetails.ingredients">
+        {{ingredient}}
+      </li>
+    </ul>
+  </section>
+</div>

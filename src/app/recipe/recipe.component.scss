@@ -1,0 +1,41 @@
+.details-container {
+  width: 90vw;
+  height: 90vh;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content:flex-start;
+  section { margin: 10px; }
+  .image-section {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    img { align-self: center; }
+  }
+
+  .description-section {
+    align-self: center;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 88vh;
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        align-self: center;
+        text-align: left;
+        width: 95%;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+}
