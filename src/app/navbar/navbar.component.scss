@@ -33,7 +33,7 @@ nav {
     }
   }
   .random {
-    left: 10px;
+    margin-top: 3px;
     button {
       border-radius: 50%;
       width: 70px;
@@ -44,11 +44,11 @@ nav {
       text-align: center;
       background-color: lightblue;
       box-shadow: 1px 1px 1px 1px black;
+      cursor: pointer;
       p {
         margin: 0; line-height: 20px; font-weight: 600;
         margin-left: -11px;
         width: 70px;
-        cursor: pointer;
       }
     }
   }
