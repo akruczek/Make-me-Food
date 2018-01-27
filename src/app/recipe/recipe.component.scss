@@ -1,5 +1,6 @@
 .details-container {
   text-align: center;
+  position: relative;
   .preloader {
     width: 100vw;
     align-self: center;
@@ -13,6 +14,10 @@
   margin: 10px;
   padding: 10px;
   display: flex;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin-top: 30px;
+  }
   justify-content:flex-start;
   section { margin: 10px; }
   .image-section {
@@ -20,15 +25,17 @@
     display: flex;
     justify-content: center;
     width: 50%;
+    @media (max-width: 767px) { width: 95vw; }
     img { align-self: center; } }
   .description-section {
     align-self: center;
-    width: 60%;
+    width: 50%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-height: 88vh;
+    @media (max-width: 767px) { width: 95vw; }
     h1 {
       font-size: 28px;
       font-weight: 700; }
@@ -47,3 +54,7 @@
     font-weight: 600;
     align-self: flex-end;
     cursor: pointer; } }
+    @media (max-width: 767px) {
+      position: absolute;
+      top: -20px;
+      left: 0; }

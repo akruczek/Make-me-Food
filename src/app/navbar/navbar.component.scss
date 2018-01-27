@@ -1,7 +1,7 @@
 nav {
-  height: 10vh;
-  @media (max-width: 1023px) { height: 12vh; }
-  @media (max-width: 424px) { height: 17vh; }
+  height: 80px;
+  @media (max-width: 1023px) { height: 100px; }
+  @media (max-width: 424px) { height: 130px; }
   width: 100vw;
   background: lightgrey url(./../../images/vintage-concrete.png);
   margin-left: -8px;
@@ -54,6 +54,7 @@ nav {
       text-align: center;
       background-color: lightblue;
       box-shadow: 1px 1px 1px 1px black;
+      @media (max-width: 1023px) { margin-top: 10px; }
       @media (max-width: 424px) { margin: 20px 10px; }
       cursor: pointer;
       p {
