@@ -1,5 +1,13 @@
 .search-result {
   width: 100vw;
+  .preloader {
+    text-align: center;
+    font-size: 36px;
+    .stick {
+      margin-top: -30px;
+      animation: loader 1s infinite;
+    }
+  }
   ul {
     display: flex;
     flex-direction: column;

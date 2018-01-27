@@ -1,4 +1,15 @@
 .details-container {
+  text-align: center;
+  .preloader {
+    width: 100vw;
+    align-self: center;
+    text-align: center;
+    font-size: 36px;
+    .stick {
+      margin-top: -30px;
+      animation: loader 1s infinite;
+    }
+  }
   width: 90vw;
   height: 90vh;
   margin: 10px;

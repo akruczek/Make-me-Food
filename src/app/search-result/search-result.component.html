@@ -1,4 +1,9 @@
 <section class="search-result">
+  <!-- *ngIf="(results.length === 0) && this.recipeService.isSearching" -->
+  <div class="preloader" *ngIf="(results.length === 0) && this.recipeService.isSearching">
+    <h1>Loading</h1>
+    <h1 class="stick">|</h1>
+  </div>
   <ul *ngIf="results">
     <li *ngFor="let result of this.recipeService.result.recipes">
       <div class="result-item">

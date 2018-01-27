@@ -13,7 +13,7 @@ export class SearchResultComponent implements OnInit {
   results = this.recipeService.result;
 
   ngOnInit() {
-
+    console.log(this.results);
   }
 
   getRecipeDetails(id: string): void {

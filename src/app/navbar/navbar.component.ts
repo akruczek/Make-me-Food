@@ -19,7 +19,6 @@ export class NavbarComponent implements OnInit {
   }
 
   search(): void {
-    console.log(this.inputValue);
     let searchUrl = "";
     if (this.inputValue !== undefined) {
       this.inputValue.split(" ").map((item, index) => {

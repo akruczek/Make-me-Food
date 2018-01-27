@@ -1,10 +1,14 @@
 <!-- this.recipeService.recipeDetails -->
 <div class="details-container">
-  <section class="image-section">
+  <div class="preloader" *ngIf="this.recipeService.isSearching">
+    <h1>Loading</h1>
+    <h1 class="stick">|</h1>
+  </div>
+  <section class="image-section" *ngIf="this.recipeService.recipeDetails.image_url">
     <img src={{this.recipeService.recipeDetails.image_url}} />
   </section>
 
-  <section class="description-section">
+  <section class="description-section" *ngIf="this.recipeService.recipeDetails.ingredients">
     <h1>{{this.recipeService.recipeDetails.title}}</h1>
     <h2>Ingredients:</h2>
     <ul>

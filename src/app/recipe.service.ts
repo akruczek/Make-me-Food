@@ -11,22 +11,27 @@ export class RecipeService {
 
   result = [];
   recipeDetails = {};
+  isSearching = false;
 
   constructor(
     private http: Http
   ) { }
 
   getRecipe(searchUrl: string): void {
+    this.isSearching = true;
     this.http.get(url + searchUrl).subscribe(response => {
       this.result = response.json();
+      this.isSearching = false;
       // console.log(response.json());
     });
   }
 
   getRecipeDescriptions(id: string): void {
+    this.isSearching = true;
     this.http.get(rUrl + id).subscribe(response => {
       this.recipeDetails = response.json().recipe;
-      console.log(response.json().recipe);
+      this.isSearching = false;
+      // console.log(response.json().recipe);
     });
   }
 
