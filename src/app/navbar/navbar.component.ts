@@ -29,9 +29,7 @@ export class NavbarComponent implements OnInit {
   }
 
   randomRecipe(): void {
-    console.log("rand");
     let randomNumber = String(Math.floor(Math.random() * 50000));
-    console.log(randomNumber);
     this.recipeService.getRecipeDescriptions(randomNumber);
   }
 

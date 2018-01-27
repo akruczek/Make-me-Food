@@ -13,7 +13,7 @@ export class SearchResultComponent implements OnInit {
   results = this.recipeService.result;
 
   ngOnInit() {
-    console.log(this.results);
+
   }
 
   getRecipeDetails(id: string): void {
@@ -21,12 +21,10 @@ export class SearchResultComponent implements OnInit {
   }
 
   previousPage(): void {
-    console.log("prev");
     this.recipeService.changePage(false);
   }
 
   nextPage(): void {
-    console.log("next");
     this.recipeService.changePage(true);
   }
 

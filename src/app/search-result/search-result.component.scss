@@ -9,25 +9,20 @@
     justify-content: space-around;
     h1 {
       font-size: 18px;
-      font-weight: 600;
-    }
+      font-weight: 600; }
     button {
       border-radius: 5px;
       height: 50px;
       width: 180px;
       font-size: 20px;
       font-weight: 700;
-      cursor: pointer;
-    }
-  }
+      cursor: pointer; } }
   .preloader {
     text-align: center;
     font-size: 36px;
     .stick {
       margin-top: -30px;
-      animation: loader 1s infinite;
-    }
-  }
+      animation: loader 1s infinite; } }
   ul {
     display: flex;
     flex-direction: column;
@@ -46,19 +41,18 @@
         section {
           margin: 0 10px;
           display: flex;
-          justify-content: center;
-        }
+          justify-content: center; }
         img { align-self: center; }
         .image-section {
           align-self: center;
           text-align: center;
           width: 50%;
           height: 90%;
-          overflow: hidden;
-        }
+          overflow: hidden; }
         .description-section {
           width: 50%;
           font-size: 36px;
+          @media (max-width: 1023px) { font-size: 30px; }
           font-weight: 700;
           text-align: center;
           display: flex;
@@ -66,23 +60,17 @@
           flex-direction: column;
           h1 {
             margin: 0;
-            padding-top: 0;
-          }
+            padding-top: 0; }
           button {
             width: 80%;
             margin: 5px 10%;
             cursor: pointer;
-            h2 { text-decoration: underline; }
-          }
-          h2 { font-size: 24px; }
+            h2 { text-decoration: underline; } }
+          h2 {
+            font-size: 24px;
+            @media (max-width: 1023px) { font-size: 20px; } }
           h6 {
             line-height: 0;
             font-size: 16px;
             margin: 8px;
-            padding: 0;
-          }
-        }
-      }
-    }
-  }
-}
+            padding: 0; } } } } } }

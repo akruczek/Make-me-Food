@@ -1,5 +1,7 @@
 nav {
   height: 10vh;
+  @media (max-width: 1023px) { height: 12vh; }
+  @media (max-width: 424px) { height: 17vh; }
   width: 100vw;
   background: lightgrey url(./../../images/vintage-concrete.png);
   margin-left: -8px;
@@ -9,29 +11,37 @@ nav {
   .input-container {
     align-self: center;
     font-size: 28px;
+    position: relative;
+    span {
+      @media (max-width: 1023px) {
+        font-size: 16px;
+        display: block;
+        text-align: left; }
+      @media (max-width: 424px) { font-size: 14px; } }
     font-weight: 600;
     .ingredients-input {
       font-weight: 600;
       font-size: 28px;
       border-radius: 5px;
       padding: 5px;
-    }
+      @media (max-width: 1023px) {
+        font-size: 16px; } }
     .search-button {
       font-size: 24px;
       font-weight: 600;
       border-radius: 5px;
       box-shadow: 1px 1px 1px 1px black;
+      @media (max-width: 424px) { margin: 2px 25%; }
       cursor: pointer;
-    }
+      @media (max-width: 1023px) { font-size: 16px; } }
     h6 {
       position: absolute;
       width: 100%;
       text-align: center;
       font-size: 12px;
       margin-top: 1px;
-      margin-left: -130px;
-    }
-  }
+      margin-left: 50px;
+      @media (max-width: 1023px) { margin-left: -75px; } } }
   .random {
     margin-top: 3px;
     button {
@@ -44,12 +54,9 @@ nav {
       text-align: center;
       background-color: lightblue;
       box-shadow: 1px 1px 1px 1px black;
+      @media (max-width: 424px) { margin: 20px 10px; }
       cursor: pointer;
       p {
         margin: 0; line-height: 20px; font-weight: 600;
         margin-left: -11px;
-        width: 70px;
-      }
-    }
-  }
-}
+        width: 70px; } } } }

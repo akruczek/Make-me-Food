@@ -7,9 +7,7 @@
     font-size: 36px;
     .stick {
       margin-top: -30px;
-      animation: loader 1s infinite;
-    }
-  }
+      animation: loader 1s infinite; } }
   width: 90vw;
   height: 90vh;
   margin: 10px;
@@ -22,9 +20,7 @@
     display: flex;
     justify-content: center;
     width: 50%;
-    img { align-self: center; }
-  }
-
+    img { align-self: center; } }
   .description-section {
     align-self: center;
     width: 60%;
@@ -35,8 +31,7 @@
     max-height: 88vh;
     h1 {
       font-size: 28px;
-      font-weight: 700;
-    }
+      font-weight: 700; }
     ul {
       display: flex;
       flex-direction: column;
@@ -45,15 +40,10 @@
         text-align: left;
         width: 95%;
         font-size: 18px;
-        font-weight: 600;
-      }
-    }
-  }
+        font-weight: 600; } } }
   .back-button {
     width: 100px;
     height: 30px;
     font-weight: 600;
     align-self: flex-end;
-    cursor: pointer;
-  }
-}
+    cursor: pointer; } }
