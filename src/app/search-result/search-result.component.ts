@@ -20,4 +20,14 @@ export class SearchResultComponent implements OnInit {
     this.recipeService.getRecipeDescriptions(id);
   }
 
+  previousPage(): void {
+    console.log("prev");
+    this.recipeService.changePage(false);
+  }
+
+  nextPage(): void {
+    console.log("next");
+    this.recipeService.changePage(true);
+  }
+
 }

@@ -1,14 +1,13 @@
-<!-- this.recipeService.recipeDetails -->
 <div class="details-container">
   <div class="preloader" *ngIf="this.recipeService.isSearching">
     <h1>Loading</h1>
     <h1 class="stick">|</h1>
   </div>
-  <section class="image-section" *ngIf="this.recipeService.recipeDetails.image_url">
+  <section class="image-section" *ngIf="this.recipeService.recipeDetails.image_url  && !this.recipeService.isSearching">
     <img src={{this.recipeService.recipeDetails.image_url}} />
   </section>
 
-  <section class="description-section" *ngIf="this.recipeService.recipeDetails.ingredients">
+  <section class="description-section" *ngIf="this.recipeService.recipeDetails.ingredients && !this.recipeService.isSearching">
     <h1>{{this.recipeService.recipeDetails.title}}</h1>
     <h2>Ingredients:</h2>
     <ul>
@@ -16,5 +15,6 @@
         {{ingredient}}
       </li>
     </ul>
+    <button class="back-button" (click)="this.goBack()">&#8617; RETURN</button>
   </section>
 </div>

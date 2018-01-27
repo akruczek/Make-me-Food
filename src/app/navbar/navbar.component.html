@@ -1,8 +1,11 @@
 <nav>
+  <div class="random">
+    <button><p>RANDOM</p> <p>RECIPE</p></button>
+  </div>
   <div class="input-container">
     Type some ingredients of your meal:
     <input class="ingredients-input" [(ngModel)]="inputValue" placeholder="ingredients..." />
     <button class="search-button" (click)="search()" routerLink="/search">SEARCH</button>
+    <h6>Example: chicken onion apple</h6>
   </div>
-  <h6>Example: chicken onion apple</h6>
 </nav>

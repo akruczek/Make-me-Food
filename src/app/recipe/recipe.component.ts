@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipeService } from "./../recipe.service";
+import { Location } from "@angular/common";
 
 @Component({
   selector: 'app-recipe',
@@ -9,11 +10,16 @@ import { RecipeService } from "./../recipe.service";
 export class RecipeComponent implements OnInit {
 
   constructor(
-    private recipeService: RecipeService
+    private recipeService: RecipeService,
+    private location: Location
   ) { }
 
   ngOnInit() {
 
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }
