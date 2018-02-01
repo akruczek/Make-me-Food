@@ -7,7 +7,7 @@ This project was built with Angular CLI.
 #### Ready project available on: http://projekt.akruczek.pl/make-me-food
 
 ## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` and the app will automatically reload if you change any of the source files.
 
 ## Description
 Application for searching food recipes by ingredients based on Recipe API (https://spoonacular.com/api/docs/recipes-api).
